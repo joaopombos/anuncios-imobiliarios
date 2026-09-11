@@ -1,0 +1,28 @@
+info:
+  name: Criar proposta
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:8080/propostas/
+  body:
+    type: json
+    data: |-
+      {
+          "preco": 245.867,
+          "aprovacao": true,
+          "comentario": "Quero esta casa!",
+          "cliente": {
+          "id": 1
+        },
+        "imovel": {
+          "id": 1
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

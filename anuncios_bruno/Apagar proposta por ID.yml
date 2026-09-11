@@ -1,0 +1,14 @@
+info:
+  name: Apagar proposta por ID
+  type: http
+
+http:
+  method: DELETE
+  url: http://localhost:8080/propostas/1
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

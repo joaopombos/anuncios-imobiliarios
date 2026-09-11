@@ -1,28 +1,33 @@
-package com.example;
+package com.example.model;
 
 import java.time.LocalDate;
 
-public class imovel {
-    public int id;
+public class Imovel {
+    private int id;
     private String morada;
-    public int tipologia;
-    public double metros;
-    public int andares;
-    public int wc;
-    public int varandas;
-    public String estado;
-    public int anoConstrucao;
-    public String classeEnergetica;
-    public String tituloAn;
-    public String descricaoAn;
-    public LocalDate dataPub;
-    public String estadoAn;
-    public double preco;
+    private int tipologia;
+    private double metros;
+    private int andares;
+    private int wc;
+    private int varandas;
+    private String estado;
+    private int anoConstrucao;
+    private String classeEnergetica;
+    private String tituloAn;
+    private String descricaoAn;
+    private LocalDate dataPub;
+    private String estadoAn;
+    private double preco;
+    private AgenteImobiliario agente;
+
+    public Imovel() {
+        
+    }
 
 
-    public imovel(int id, String morada, int tipologia, double metros, int andares, int wc, int varandas, String estado,
+    public Imovel(int id, String morada, int tipologia, double metros, int andares, int wc, int varandas, String estado,
             int anoConstrucao, String classeEnergetica, String tituloAn, String descricaoAn, LocalDate dataPub,
-            String estadoAn, double preco) {
+            String estadoAn, double preco, AgenteImobiliario agente) {
         this.id = id;
         this.morada = morada;
         this.tipologia = tipologia;
@@ -38,6 +43,7 @@ public class imovel {
         this.dataPub = dataPub;
         this.estadoAn = estadoAn;
         this.preco = preco;
+        this.agente = agente;
     }
 
     public double getPreco() {
@@ -161,4 +167,11 @@ public class imovel {
         this.id = id;
     }
 
+    public AgenteImobiliario getAgente() {
+        return agente;
+    }
+
+    public void setAgente(AgenteImobiliario agente) {
+        this.agente = agente;
+    }
 }

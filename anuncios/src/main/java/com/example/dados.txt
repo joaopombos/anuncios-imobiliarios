@@ -1,0 +1,85 @@
+Agentes:
+{
+  "contacto": 987654321,
+  "nome": "João Silva"
+}
+
+{
+  "contacto": 935012269,
+  "nome": "Maria Santos"
+}
+
+{
+  "contacto": 948105284,
+  "nome": "Rui Almeida"
+}
+
+Imóveis:
+{
+  "morada": "Viseu",
+  "tipologia": 3,
+  "metros": 200,
+  "andares": 2,
+  "wc": 2,
+  "varandas": 3,
+  "estado": "Usado",
+  "anoConstrucao": 2015,
+  "classeEnergetica": "B+",
+  "tituloAn": "T2 Centro Viseu.",
+  "descricaoAn": "Oportunidade no centro de Viseu!!",
+  "dataPub": "2026-09-11",
+  "estadoAn": "Ativo",
+  "preco": 200.000,
+  "agente": {
+    "id": 1
+  }
+}
+
+{
+  "morada": "Porto",
+  "tipologia": 5,
+  "metros": 358,
+  "andares": 2,
+  "wc": 4,
+  "varandas": 4,
+  "estado": "Novo",
+  "anoConstrucao": 2026,
+  "classeEnergetica": "A+",
+  "tituloAn": "T5 Porto",
+  "descricaoAn": "Apartamento novo no porto!",
+  "dataPub": "2026-09-11",
+  "estadoAn": "Ativo",
+  "preco": 600.500,
+  "agente": {
+    "id": 2
+  }
+}
+
+Clientes:
+{
+  "contacto": 923748194,
+  "nome": "António Campos"
+}
+
+{
+  "contacto": 982643928,
+  "nome": "Lurdes Costa"
+}
+
+{
+  "contacto": 983822849,
+  "nome": "Joana Mendes"
+}
+
+propostas:
+{
+    "preco": 245.867,
+    "aprovacao": true,
+    "comentario": "Quero esta casa!",
+    "cliente": {
+    "id": 1
+  },
+  "imovel": {
+    "id": 1
+  }
+}

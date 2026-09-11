@@ -1,15 +1,22 @@
-package com.example;
+package com.example.model;
 
-public class AgenteImobiliario {
+public class Cliente {
+
     private int id;
-    public String nome;
-    public int contacto;
+    private String nome;
+    private int contacto;
 
-    public AgenteImobiliario(int id, String nome, int contacto) {
+    
+    public Cliente(){
+
+    }
+
+    public Cliente (int id, String nome, int contacto){
         this.id = id;
         this.nome = nome;
         this.contacto = contacto;
     }
+
 
     public int getId() {
         return id;
@@ -34,4 +41,6 @@ public class AgenteImobiliario {
     public void setContacto(int contacto) {
         this.contacto = contacto;
     }
+
+
 }

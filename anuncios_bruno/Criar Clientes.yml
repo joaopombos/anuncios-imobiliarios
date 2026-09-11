@@ -1,0 +1,21 @@
+info:
+  name: Criar Clientes
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:8080/clientes/
+  body:
+    type: json
+    data: |
+      {
+        "contacto": 983822849,
+        "nome": "Joana Mendes"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

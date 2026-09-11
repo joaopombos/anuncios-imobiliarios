@@ -1,0 +1,23 @@
+info:
+  name: Criar Agente
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/agentes/
+  body:
+    type: json
+    data: |+
+      {
+        "contacto": 948105284,
+        "nome": "Rui Almeida"
+      }
+
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
