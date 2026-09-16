@@ -1,0 +1,22 @@
+[ {
+  "id" : 1,
+  "morada" : "Viseu",
+  "tipologia" : 3,
+  "metros" : 200.0,
+  "andares" : 2,
+  "wc" : 2,
+  "varandas" : 3,
+  "estado" : "Usado",
+  "anoConstrucao" : 2015,
+  "classeEnergetica" : "B+",
+  "tituloAn" : "T2 Centro Viseu.",
+  "descricaoAn" : "Oportunidade no centro de Viseu!!",
+  "dataPub" : "2026-09-11",
+  "estadoAn" : "Ativo",
+  "preco" : 200000,
+  "agente" : {
+    "id" : 1,
+    "nome" : "João Silva",
+    "contacto" : 987654321
+  }
+} ]

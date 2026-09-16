@@ -1,6 +1,7 @@
 info:
   name: Criar proposta
   type: http
+  seq: 1
 
 http:
   method: POST
@@ -9,7 +10,7 @@ http:
     type: json
     data: |-
       {
-          "preco": 245.867,
+          "preco": 245867,
           "aprovacao": true,
           "comentario": "Quero esta casa!",
           "cliente": {

@@ -8,7 +8,7 @@ http:
   url: http://localhost:8080/imoveis/
   body:
     type: json
-    data: |-
+    data: |
       {
         "morada": "Viseu",
         "tipologia": 3,
@@ -23,7 +23,7 @@ http:
         "descricaoAn": "Oportunidade no centro de Viseu!!",
         "dataPub": "2026-09-11",
         "estadoAn": "Ativo",
-        "preco": 200.000,
+        "preco": 200000,
         "agente": {
           "id": 1
         }

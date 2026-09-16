@@ -2,7 +2,7 @@ package com.example.model;
 
 public class Proposta {
     private int id;
-    private double preco;
+    private int preco;
     private boolean aprovacao;
     private String comentario;
     private Cliente cliente;
@@ -12,7 +12,7 @@ public class Proposta {
 
     }
 
-    public Proposta(int id, double preco, boolean aprovacao, String comentario, Cliente cliente, Imovel imovel){
+    public Proposta(int id, int preco, boolean aprovacao, String comentario, Cliente cliente, Imovel imovel){
         this.id = id;
         this.preco = preco;
         this.aprovacao = aprovacao;
@@ -28,10 +28,10 @@ public class Proposta {
         this.id = id;
     }
 
-    public double getPreco() {
+    public int getPreco() {
         return preco;
     }
-    public void setPreco(double preco) {
+    public void setPreco(int preco) {
         this.preco = preco;
     }
 

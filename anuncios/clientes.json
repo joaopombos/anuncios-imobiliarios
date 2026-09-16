@@ -1,0 +1,13 @@
+[ {
+  "id" : 1,
+  "nome" : "António Campos",
+  "contacto" : 923748194
+}, {
+  "id" : 2,
+  "nome" : "Lurdes Costa",
+  "contacto" : 982643928
+}, {
+  "id" : 3,
+  "nome" : "Joana Mendes",
+  "contacto" : 983822849
+} ]

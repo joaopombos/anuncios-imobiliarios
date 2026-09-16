@@ -1,4 +1,5 @@
 com/example/service/ClienteService.class
+com/example/repository/ClienteRepository$1.class
 com/example/model/Proposta.class
 com/example/service/ImovelService.class
 com/example/AppConfig.class
@@ -7,7 +8,9 @@ com/example/repository/AgenteRepository.class
 com/example/controller/AgenteController.class
 com/example/controller/ImovelController.class
 com/example/model/AgenteImobiliario.class
+com/example/repository/ImovelRepository$1.class
 com/example/repository/PropostaRepository.class
+com/example/repository/PropostaRepository$1.class
 com/example/repository/ClienteRepository.class
 com/example/service/AgenteService.class
 com/example/model/Imovel.class
@@ -15,4 +18,5 @@ com/example/controller/PropostaController.class
 com/example/service/PropostaService.class
 com/example/controller/ClienteController.class
 com/example/model/Cliente.class
+com/example/repository/AgenteRepository$1.class
 com/example/Main.class

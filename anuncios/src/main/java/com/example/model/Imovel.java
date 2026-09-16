@@ -17,7 +17,7 @@ public class Imovel {
     private String descricaoAn;
     private LocalDate dataPub;
     private String estadoAn;
-    private double preco;
+    private int preco;
     private AgenteImobiliario agente;
 
     public Imovel() {
@@ -27,7 +27,7 @@ public class Imovel {
 
     public Imovel(int id, String morada, int tipologia, double metros, int andares, int wc, int varandas, String estado,
             int anoConstrucao, String classeEnergetica, String tituloAn, String descricaoAn, LocalDate dataPub,
-            String estadoAn, double preco, AgenteImobiliario agente) {
+            String estadoAn, int preco, AgenteImobiliario agente) {
         this.id = id;
         this.morada = morada;
         this.tipologia = tipologia;
@@ -46,11 +46,11 @@ public class Imovel {
         this.agente = agente;
     }
 
-    public double getPreco() {
+    public int getPreco() {
         return preco;
     }
 
-    public void setPreco(double preco) {
+    public void setPreco(int preco) {
         this.preco = preco;
     }
 

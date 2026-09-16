@@ -1,13 +1,14 @@
 info:
   name: Criar Clientes
   type: http
+  seq: 1
 
 http:
   method: POST
   url: http://localhost:8080/clientes/
   body:
     type: json
-    data: |
+    data: |-
       {
         "contacto": 983822849,
         "nome": "Joana Mendes"
