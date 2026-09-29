@@ -14,7 +14,7 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.Response;
 
-@Path("/clientes")
+@Path("api/clientes")
 public class ClienteController {
     private ClienteService service = new ClienteService();
 

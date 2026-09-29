@@ -1,7 +1,7 @@
 [ {
   "id" : 1,
   "preco" : 245867,
-  "aprovacao" : true,
+  "Estado" : "Pendente",
   "comentario" : "Quero esta casa!",
   "cliente" : {
     "id" : 1,

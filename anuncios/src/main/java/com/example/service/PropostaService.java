@@ -14,49 +14,53 @@ public class PropostaService {
     private ClienteRepository clienteRepository = ClienteRepository.getInstance();
     private ImovelRepository imovelRepository = ImovelRepository.getInstance();
 
-
     public Proposta criar(Proposta proposta) {
 
-    if (proposta == null) {
-        throw new IllegalArgumentException("Proposta inválida");
+        if (proposta == null) {
+            throw new IllegalArgumentException("Proposta inválida");
+        }
+
+        if (proposta.getComentario() == null ||
+                proposta.getComentario().trim().isEmpty()) {
+            throw new IllegalArgumentException("Comentário é obrigatório");
+        }
+
+        if (proposta.getPreco() <= 0) {
+            throw new IllegalArgumentException("Preço inválido");
+        }
+
+        if (proposta.getCliente() == null) {
+            throw new IllegalArgumentException("Cliente é obrigatório");
+        }
+
+        if (!("Aprovado".equals(proposta.getEstado()) ||
+                "Não Aprovado".equals(proposta.getEstado()) ||
+                "Pendente".equals(proposta.getEstado()))) {
+            throw new IllegalArgumentException("Estado inválido!");
+        }
+
+        if (proposta.getImovel() == null) {
+            throw new IllegalArgumentException("Imóvel é obrigatório");
+        }
+
+        Cliente cliente = clienteRepository.findById(proposta.getCliente().getId());
+
+        if (cliente == null) {
+            throw new IllegalArgumentException("Cliente não encontrado");
+        }
+
+        Imovel imovel = imovelRepository.findById(proposta.getImovel().getId());
+
+        if (imovel == null) {
+            throw new IllegalArgumentException("Imóvel não encontrado");
+        }
+
+        // Garante que são os objetos existentes nos repositories
+        proposta.setCliente(cliente);
+        proposta.setImovel(imovel);
+
+        return repository.save(proposta);
     }
-
-    if (proposta.getComentario() == null ||
-        proposta.getComentario().trim().isEmpty()) {
-        throw new IllegalArgumentException("Comentário é obrigatório");
-    }
-
-    if (proposta.getPreco() <= 0) {
-        throw new IllegalArgumentException("Preço inválido");
-    }
-
-    if (proposta.getCliente() == null) {
-        throw new IllegalArgumentException("Cliente é obrigatório");
-    }
-
-    if (proposta.getImovel() == null) {
-        throw new IllegalArgumentException("Imóvel é obrigatório");
-    }
-
-    Cliente cliente = clienteRepository.findById(proposta.getCliente().getId());
-
-    if (cliente == null) {
-        throw new IllegalArgumentException("Cliente não encontrado");
-    }
-
-    Imovel imovel = imovelRepository.findById(proposta.getImovel().getId());
-
-    if (imovel == null) {
-        throw new IllegalArgumentException("Imóvel não encontrado");
-    }
-
-    // Garante que são os objetos existentes nos repositories
-    proposta.setCliente(cliente);
-    proposta.setImovel(imovel);
-
-    return repository.save(proposta);
-}
-
 
     public Proposta obterPorId(int id) {
         return repository.findById(id);

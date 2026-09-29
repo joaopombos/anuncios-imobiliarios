@@ -1,0 +1,20 @@
+info:
+  name: Mudar estado anuncio
+  type: http
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/imoveis/1/estado
+  body:
+    type: json
+    data: |
+      {
+        "estadoAn": "Ativo"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

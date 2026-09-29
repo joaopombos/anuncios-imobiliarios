@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Navbar flutuante */
+.navbar-flutuante {
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+
+    width: calc(30% - 40px);
+    margin: 20px auto 0;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-flutuante .navbar-nav {
+    align-items: center;
+}
+
+.navbar-flutuante .nav-link {
+    margin: 0 8px;
+    font-weight: 500;
+    transition: 0.1s ease;
+}
+
+.navbar-flutuante .nav-link:hover {
+    color: #007bff !important;
+    transform: translateY(-1px);
+}
+
+.navbar-flutuante .nav-item.active .nav-link {
+    color: #007bff;
+    font-weight: bold;
+}

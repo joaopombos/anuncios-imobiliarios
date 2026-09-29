@@ -60,7 +60,18 @@ public class ImovelRepository {
                 guardarDadosFicheiro(); // ← Persiste em ficheiro
         }
 
-        // ========== NOVOS MÉTODOS ==========
+        public Imovel atualizarEstado(int id, String novoEstado) {
+                Imovel imovel = imoveis.get(id);
+
+                if (imovel == null) {
+                        return null;
+                }
+
+                imovel.setEstadoAn(novoEstado);
+                guardarDadosFicheiro();
+
+                return imovel;
+        }
 
         private void carregarDadosFicheiro() {
                 File ficheiro = new File(FICHEIRO_DADOS);

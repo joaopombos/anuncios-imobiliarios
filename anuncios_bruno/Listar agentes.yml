@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:8080/agentes/
+  url: http://localhost:8080/api/agentes/
   auth: inherit
 
 settings:

@@ -7,7 +7,7 @@ import com.example.service.AgenteService;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Response;
 
-@Path("/agentes")
+@Path("api/agentes")
 public class AgenteController {
     private AgenteService service = new AgenteService();
 

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestão de Imóveis</title>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/styleImovel.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-flutuante">
+
+    <button class="navbar-toggler" type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Abrir menu">
+
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="agentes.html">Agentes</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="clientes.html">Clientes</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="imovel.html">Imóveis</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="propostas.html">Propostas</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+    <main class="container imoveis-container">
+
+        <h1>Gestão de Imóveis</h1>
+
+        <form id="imovelForm">
+
+            <div class="form-row">
+
+                <div class="form-group col-md-8">
+                    <label for="morada">Morada</label>
+                    <input type="text" class="form-control"
+                        id="morada"
+                        placeholder="Morada"
+                        required>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="tipologia">Tipologia</label>
+                    <input type="number" class="form-control"
+                        id="tipologia"
+                        placeholder="Ex.: 3"
+                        required>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="metros">Metros quadrados</label>
+                    <input type="number" class="form-control"
+                        id="metros"
+                        placeholder="m²"
+                        required>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="andares">N.º de andares</label>
+                    <input type="number" class="form-control"
+                        id="andares"
+                        placeholder="N.º de andares"
+                        required>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="wc">N.º de WC</label>
+                    <input type="number" class="form-control"
+                        id="wc"
+                        placeholder="N.º de WC"
+                        required>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="varandas">N.º de varandas</label>
+                    <input type="number" class="form-control"
+                        id="varandas"
+                        placeholder="N.º de varandas"
+                        required>
+                </div>
+
+                <div class="form-group col-md-8">
+                    <label for="estado">Estado do imóvel</label>
+                    <select id="estado" name="estado"
+                        class="form-control"
+                        required>
+
+                        <option value="">Selecionar estado</option>
+                        <option value="Novo">Novo</option>
+                        <option value="Usado">Usado</option>
+                        <option value="Em construção">Em construção</option>
+                        <option value="Em ruina">Em ruína</option>
+                        <option value="Abandonado">Abandonado</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="anoConstrucao">Ano de construção</label>
+                    <input type="number" class="form-control"
+                        id="anoConstrucao"
+                        placeholder="Ex.: 2020">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="classeEnergetica">Classe energética</label>
+                    <input type="text" class="form-control"
+                        id="classeEnergetica"
+                        placeholder="Ex.: A+">
+                </div>
+
+                <div class="form-group col-md-8">
+                    <label for="tituloAn">Título do anúncio</label>
+                    <input type="text" class="form-control"
+                        id="tituloAn"
+                        placeholder="Título do anúncio"
+                        required>
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="descricao">Descrição</label>
+                    <textarea class="form-control"
+                        id="descricao"
+                        rows="3"
+                        placeholder="Descrição do anúncio"></textarea>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="preco">Preço</label>
+                    <input type="number" class="form-control"
+                        id="preco"
+                        placeholder="Preço do imóvel">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="estadoAn">Estado do anúncio</label>
+                    <select id="estadoAn" name="estadoAn"
+                        class="form-control"
+                        required>
+
+                        <option value="">Selecionar estado</option>
+                        <option value="Ativo">Ativo</option>
+                        <option value="Desativado">Desativado</option>
+                        <option value="Rascunho">Rascunho</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="agenteId">Agente responsável</label>
+                    <select id="agenteId" name="agenteId"
+                        class="form-control"
+                        required>
+
+                        <option value="">Selecionar agente</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-actions">
+                <button type="reset" class="btn btn-danger">
+                    Limpar
+                </button>
+
+                <button type="submit" class="btn btn-primary">
+                    Adicionar imóvel
+                </button>
+            </div>
+
+        </form>
+
+        <div id="mensagem"></div>
+
+        <div id="listaImoveis"></div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+
+    <script src="js/scriptimovel.js"></script>
+
+</body>
+
+</html>

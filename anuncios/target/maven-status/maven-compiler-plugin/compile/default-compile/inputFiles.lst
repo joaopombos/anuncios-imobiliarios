@@ -1,9 +1,12 @@
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/repository/ImovelRepository.java
+/Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/servlet/AgentesServlet.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/repository/AgenteRepository.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/service/ClienteService.java
+/Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/controller/EstadoAnuncioDTO.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/controller/ClienteController.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/service/PropostaService.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/repository/ClienteRepository.java
+/Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/servlet/ClientesServlet.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/service/ImovelService.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/model/Proposta.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/model/Imovel.java
@@ -12,6 +15,7 @@
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/AppConfig.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/controller/ImovelController.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/controller/AgenteController.java
+/Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/servlet/ImovelServlet.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/Main.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/model/AgenteImobiliario.java
 /Users/joaopombo/Documents/anuncios-imobiliarios/anuncios/src/main/java/com/example/repository/PropostaRepository.java
