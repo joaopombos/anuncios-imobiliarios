@@ -33,11 +33,8 @@ public class PropostaService {
             throw new IllegalArgumentException("Cliente é obrigatório");
         }
 
-        if (!("Aprovado".equals(proposta.getEstado()) ||
-                "Não Aprovado".equals(proposta.getEstado()) ||
-                "Pendente".equals(proposta.getEstado()))) {
-            throw new IllegalArgumentException("Estado inválido!");
-        }
+        // Toda a proposta nova começa como Pendente
+        proposta.setEstado("Pendente");
 
         if (proposta.getImovel() == null) {
             throw new IllegalArgumentException("Imóvel é obrigatório");
@@ -68,6 +65,21 @@ public class PropostaService {
 
     public List<Proposta> listarTodos() {
         return repository.findAll();
+    }
+
+    public Proposta alterarEstado(int id, String novoEstado) {
+        if (novoEstado == null || novoEstado.isBlank()) {
+            throw new IllegalArgumentException("O estado da proposta é obrigatório.");
+        }
+
+        if (!novoEstado.equals("Pendente")
+                && !novoEstado.equals("Aprovado")
+                && !novoEstado.equals("Não Aprovado")) {
+            throw new IllegalArgumentException(
+                    "Estado inválido. Os estados permitidos são: Pendente, Aprovado, Não Aprovado.");
+        }
+
+        return repository.atualizarEstado(id, novoEstado);
     }
 
     public void eliminar(int id) {

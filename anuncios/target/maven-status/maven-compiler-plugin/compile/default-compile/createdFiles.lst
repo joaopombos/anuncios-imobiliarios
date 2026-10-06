@@ -2,6 +2,8 @@ com/example/service/ClienteService.class
 com/example/repository/ClienteRepository$1.class
 com/example/repository/ImovelRepository.class
 com/example/controller/ImovelController.class
+com/example/servlet/PropostaServlet.class
+com/example/controller/AuthController.class
 com/example/repository/PropostaRepository$1.class
 com/example/service/AgenteService.class
 com/example/model/Imovel.class
@@ -10,6 +12,8 @@ com/example/repository/AgenteRepository$1.class
 com/example/Main.class
 com/example/servlet/ClientesServlet.class
 com/example/servlet/AgentesServlet.class
+com/example/service/AuthService$Sessao.class
+com/example/model/AuthRequest.class
 com/example/model/Proposta.class
 com/example/service/ImovelService.class
 com/example/AppConfig.class
@@ -21,6 +25,8 @@ com/example/repository/ImovelRepository$1.class
 com/example/repository/PropostaRepository.class
 com/example/repository/ClienteRepository.class
 com/example/controller/EstadoAnuncioDTO.class
+com/example/service/AuthService.class
 com/example/service/PropostaService.class
 com/example/controller/ClienteController.class
+com/example/controller/EstadoPropostaDTO.class
 com/example/model/Cliente.class

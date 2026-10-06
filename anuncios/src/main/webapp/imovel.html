@@ -49,6 +49,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="propostas.html">Propostas</a>
             </li>
+                <li class="nav-item" id="navAuth"><a class="nav-link" href="login.html">Entrar</a></li>
 
         </ul>
     </div>
@@ -111,7 +112,7 @@
                         required>
                 </div>
 
-                <div class="form-group col-md-8">
+                <div class="form-group col-md-4">
                     <label for="estado">Estado do imóvel</label>
                     <select id="estado" name="estado"
                         class="form-control"
@@ -140,12 +141,13 @@
                         placeholder="Ex.: A+">
                 </div>
 
-                <div class="form-group col-md-8">
+                <div class="form-group col-md-12">
                     <label for="tituloAn">Título do anúncio</label>
-                    <input type="text" class="form-control"
+                    <textarea class="form-control"
                         id="tituloAn"
+                        rows="1"
                         placeholder="Título do anúncio"
-                        required>
+                        required></textarea>
                 </div>
 
                 <div class="form-group col-md-12">
@@ -216,4 +218,5 @@
 
 </body>
 
+<script src="js/auth.js"></script>
 </html>

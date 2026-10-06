@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleLogin.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-flutuante">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="agentes.html">Agentes</a></li>
+                <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+                <li class="nav-item"><a class="nav-link" href="imovel.html">Imóveis</a></li>
+                <li class="nav-item"><a class="nav-link" href="propostas.html">Propostas</a></li>
+                <li class="nav-item active" id="navAuth"><a class="nav-link" href="login.html">Entrar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container login-container">
+        <h1 id="titulo">Entrar</h1>
+
+        <!-- Tipo de utilizador -->
+        <div class="btn-group btn-group-toggle d-flex mb-3" id="tipoGrupo" role="group">
+            <button type="button" class="btn btn-outline-primary active" data-tipo="CLIENTE">Cliente</button>
+            <button type="button" class="btn btn-outline-primary" data-tipo="AGENTE">Agente imobiliário</button>
+        </div>
+
+        <form id="authForm" novalidate>
+            <div id="camposRegisto" style="display:none">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" class="form-control" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="contacto">Contacto</label>
+                    <input type="tel" id="contacto" class="form-control" autocomplete="tel">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" autocomplete="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Palavra-passe</label>
+                <input type="password" id="password" class="form-control" autocomplete="current-password" required>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn btn-primary btn-block">Entrar</button>
+        </form>
+
+        <div id="mensagem"></div>
+
+        <p class="text-center mt-3">
+            <span id="trocaTexto">Ainda não tem conta?</span>
+            <a href="#" id="trocaModo">Criar conta</a>
+        </p>
+    </main>
+    <script src="js/auth.js"></script>
+    <script src="js/scriptlogin.js"></script>
+</body>
+
+</html>

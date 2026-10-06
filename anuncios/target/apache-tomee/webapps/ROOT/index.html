@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleHome.css">
 
 </head>
 
@@ -42,42 +43,43 @@
                 <li class="nav-item">
                     <a class="nav-link" href="propostas.html">Propostas</a>
                 </li>
+                <li class="nav-item" id="navAuth"><a class="nav-link" href="login.html">Entrar</a></li>
 
             </ul>
         </div>
     </nav>
 
-    <h2>Em /agentes é possível:</h2>
-    <ul>
-        <li>Criar agentes novos</li>
-        <li>Listar todos os agentes existentes</li>
-        <li>Procurar agentes por ID</li>
-        <li>Apagar agentes por ID</li>
-    </ul>
+    <main class="container home-container">
+        <h1 id="boasVindas">Anúncios Imobiliários</h1>
+        <p class="home-sub" id="subtitulo">Gestão de imóveis, agentes, clientes e propostas.</p>
 
-    <h2>Em /imoveis é possível:</h2>
-    <ul>
-        <li>Criar imoveis novos</li>
-        <li>Listar todos os imoveis existentes</li>
-        <li>Procurar imoveis por ID</li>
-        <li>Apagar imoveis por ID</li>
-    </ul>
-
-    <h2>Em /clientes é possível:</h2>
-    <ul>
-        <li>Criar clientes novos</li>
-        <li>Listar todos os clientes existentes</li>
-        <li>Procurar clientes por ID</li>
-        <li>Apagar clientes por ID</li>
-    </ul>
-
-    <h2>Em /propostas é possível:</h2>
-    <ul>
-        <li>Criar propostas novas</li>
-        <li>Listar todas os propostas existentes</li>
-        <li>Procurar propostas por ID</li>
-        <li>Apagar propostas por ID</li>
-    </ul>
+        <div class="row stats">
+            <div class="col-6 col-md-3">
+                <a href="imovel.html" class="stat-card">
+                    <span class="stat-num" id="numImoveis">–</span>
+                    <span class="stat-label">Imóveis</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="agentes.html" class="stat-card">
+                    <span class="stat-num" id="numAgentes">–</span>
+                    <span class="stat-label">Agentes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="clientes.html" class="stat-card">
+                    <span class="stat-num" id="numClientes">–</span>
+                    <span class="stat-label">Clientes</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="propostas.html" class="stat-card">
+                    <span class="stat-num" id="numPropostas">–</span>
+                    <span class="stat-label">Propostas</span>
+                </a>
+            </div>
+        </div>
+    </main>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -86,6 +88,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
 
-<script src="js/scriptclientes.js"></script>
+<script src="js/scripthome.js"></script>
 
+<script src="js/auth.js"></script>
 </html>

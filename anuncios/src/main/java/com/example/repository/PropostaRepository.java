@@ -56,6 +56,19 @@ public class PropostaRepository {
                 return new ArrayList<>(propostas.values());
         }
 
+        public Proposta atualizarEstado(int id, String novoEstado) {
+                Proposta proposta = propostas.get(id);
+
+                if (proposta == null) {
+                        return null;
+                }
+
+                proposta.setEstado(novoEstado);
+                guardarDadosFicheiro();
+
+                return proposta;
+        }
+
         public void delete(int id) {
                 propostas.remove(id);
                 guardarDadosFicheiro(); // ← Persiste em ficheiro

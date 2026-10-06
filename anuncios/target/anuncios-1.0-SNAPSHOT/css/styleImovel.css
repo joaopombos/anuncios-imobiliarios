@@ -12,7 +12,7 @@ body {
     top: 20px;
     z-index: 1000;
 
-    width: calc(30% - 40px);
+    width: calc(40% - 40px);
     margin: 20px auto 0;
 
     border-radius: 12px;
