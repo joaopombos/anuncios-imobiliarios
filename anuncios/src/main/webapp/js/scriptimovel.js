@@ -214,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h3>${imovel.tituloAn}</h3>
                         <h4>${imovel.preco}€</h4>
                         <p><strong>${imovel.descricaoAn}</strong></p>
+                        <p><strong>ID:</strong> ${imovel.id}</p>
                         <p><strong>Tipologia:</strong> T${imovel.tipologia}</p>
                         <p><strong>Metros<sup>2</sup>:</strong> ${imovel.metros}m<sup>2</sup></p>
                         <p><strong>Andares:</strong> ${imovel.andares}</p>

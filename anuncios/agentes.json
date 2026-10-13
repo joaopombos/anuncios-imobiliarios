@@ -1,13 +1,61 @@
 [ {
   "id" : 1,
   "nome" : "João Silva",
-  "contacto" : 987654321
+  "contacto" : 987654321,
+  "email" : "joao@email.com",
+  "password" : "123"
 }, {
   "id" : 2,
   "nome" : "Maria Santos",
-  "contacto" : 935012269
+  "contacto" : 935012269,
+  "email" : "maria@email.com",
+  "password" : "123"
 }, {
   "id" : 3,
   "nome" : "Rui Almeida",
-  "contacto" : 948105284
+  "contacto" : 948105284,
+  "email" : "rui@email.com",
+  "password" : "123"
+}, {
+  "id" : 4,
+  "nome" : "Ana Ferreira",
+  "contacto" : 912345678,
+  "email" : "ana@email.com",
+  "password" : "123"
+}, {
+  "id" : 5,
+  "nome" : "Pedro Costa",
+  "contacto" : 963217845,
+  "email" : "pedro@email.com",
+  "password" : "123"
+}, {
+  "id" : 6,
+  "nome" : "Sofia Rodrigues",
+  "contacto" : 926784130,
+  "email" : "sofia@email.com",
+  "password" : "123"
+}, {
+  "id" : 7,
+  "nome" : "Tiago Pereira",
+  "contacto" : 919456203,
+  "email" : "tiago@email.com",
+  "password" : "123"
+}, {
+  "id" : 8,
+  "nome" : "Carla Martins",
+  "contacto" : 938520716,
+  "email" : "carla@email.com",
+  "password" : "123"
+}, {
+  "id" : 9,
+  "nome" : "Bruno Carvalho",
+  "contacto" : 961098374,
+  "email" : "bruno@email.com",
+  "password" : "123"
+}, {
+  "id" : 10,
+  "nome" : "Inês Gomes",
+  "contacto" : 927641859,
+  "email" : "ines@email.com",
+  "password" : "123"
 } ]

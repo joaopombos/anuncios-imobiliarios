@@ -1,4 +1,73 @@
 [ {
+  "id" : 1,
+  "morada" : "Lisboa",
+  "tipologia" : 2,
+  "metros" : 95.0,
+  "andares" : 1,
+  "wc" : 2,
+  "varandas" : 1,
+  "estado" : "Usado",
+  "anoConstrucao" : 2008,
+  "classeEnergetica" : "C",
+  "tituloAn" : "T2 em Lisboa",
+  "descricaoAn" : "Apartamento luminoso no centro de Lisboa!",
+  "dataPub" : "2026-09-05",
+  "estadoAn" : "Ativo",
+  "preco" : 320000,
+  "agente" : {
+    "id" : 4,
+    "nome" : "Ana Ferreira",
+    "contacto" : 912345678,
+    "email" : null,
+    "password" : null
+  }
+}, {
+  "id" : 2,
+  "morada" : "Porto",
+  "tipologia" : 1,
+  "metros" : 55.0,
+  "andares" : 1,
+  "wc" : 1,
+  "varandas" : 0,
+  "estado" : "Usado",
+  "anoConstrucao" : 1998,
+  "classeEnergetica" : "D",
+  "tituloAn" : "T1 no Porto",
+  "descricaoAn" : "Ideal para investimento junto à Boavista!",
+  "dataPub" : "2026-09-08",
+  "estadoAn" : "Ativo",
+  "preco" : 145000,
+  "agente" : {
+    "id" : 5,
+    "nome" : "Pedro Costa",
+    "contacto" : 963217845,
+    "email" : null,
+    "password" : null
+  }
+}, {
+  "id" : 3,
+  "morada" : "Braga",
+  "tipologia" : 3,
+  "metros" : 140.0,
+  "andares" : 2,
+  "wc" : 3,
+  "varandas" : 2,
+  "estado" : "Novo",
+  "anoConstrucao" : 2025,
+  "classeEnergetica" : "A+",
+  "tituloAn" : "T3 em Braga",
+  "descricaoAn" : "Moradia moderna perto do centro de Braga!",
+  "dataPub" : "2026-09-12",
+  "estadoAn" : "Ativo",
+  "preco" : 285000,
+  "agente" : {
+    "id" : 6,
+    "nome" : "Sofia Rodrigues",
+    "contacto" : 926784130,
+    "email" : null,
+    "password" : null
+  }
+}, {
   "id" : 4,
   "morada" : "Coimbra",
   "tipologia" : 1,
@@ -17,7 +86,55 @@
   "agente" : {
     "id" : 2,
     "nome" : "Maria Santos",
-    "contacto" : 935012269
+    "contacto" : 935012269,
+    "email" : null,
+    "password" : null
+  }
+}, {
+  "id" : 5,
+  "morada" : "Faro",
+  "tipologia" : 2,
+  "metros" : 88.0,
+  "andares" : 1,
+  "wc" : 2,
+  "varandas" : 2,
+  "estado" : "Usado",
+  "anoConstrucao" : 2012,
+  "classeEnergetica" : "B",
+  "tituloAn" : "T2 em Faro",
+  "descricaoAn" : "Apartamento a poucos minutos da praia!",
+  "dataPub" : "2026-09-15",
+  "estadoAn" : "Rascunho",
+  "preco" : 230000,
+  "agente" : {
+    "id" : 7,
+    "nome" : "Tiago Pereira",
+    "contacto" : 919456203,
+    "email" : null,
+    "password" : null
+  }
+}, {
+  "id" : 6,
+  "morada" : "Aveiro",
+  "tipologia" : 0,
+  "metros" : 38.0,
+  "andares" : 1,
+  "wc" : 1,
+  "varandas" : 0,
+  "estado" : "Novo",
+  "anoConstrucao" : 2026,
+  "classeEnergetica" : "A",
+  "tituloAn" : "T0 em Aveiro",
+  "descricaoAn" : "Estúdio moderno junto à ria!",
+  "dataPub" : "2026-09-18",
+  "estadoAn" : "Rascunho",
+  "preco" : 110000,
+  "agente" : {
+    "id" : 8,
+    "nome" : "Carla Martins",
+    "contacto" : 938520716,
+    "email" : null,
+    "password" : null
   }
 }, {
   "id" : 7,
@@ -38,7 +155,9 @@
   "agente" : {
     "id" : 1,
     "nome" : "João Silva",
-    "contacto" : 987654321
+    "contacto" : 987654321,
+    "email" : null,
+    "password" : null
   }
 }, {
   "id" : 8,
@@ -59,6 +178,169 @@
   "agente" : {
     "id" : 3,
     "nome" : "Rui Almeida",
-    "contacto" : 948105284
+    "contacto" : 948105284,
+    "email" : null,
+    "password" : null
+  }
+}, {
+  "id" : 9,
+  "morada" : "Setúbal",
+  "tipologia" : 3,
+  "metros" : 120.0,
+  "andares" : 3,
+  "wc" : 2,
+  "varandas" : 2,
+  "estado" : "Usado",
+  "anoConstrucao" : 2005,
+  "classeEnergetica" : "C",
+  "tituloAn" : "T3 em Setúbal",
+  "descricaoAn" : "Excelente vista sobre o rio Sado!",
+  "dataPub" : "2026-09-20",
+  "estadoAn" : "Ativo",
+  "preco" : 265000,
+  "agente" : {
+    "id" : 9,
+    "nome" : "Bruno Carvalho",
+    "contacto" : 961098374,
+    "email" : null,
+    "password" : null
+  }
+}, {
+  "id" : 10,
+  "morada" : "Guimarães",
+  "tipologia" : 2,
+  "metros" : 92.0,
+  "andares" : 1,
+  "wc" : 2,
+  "varandas" : 1,
+  "estado" : "Novo",
+  "anoConstrucao" : 2026,
+  "classeEnergetica" : "A+",
+  "tituloAn" : "T2 em Guimarães",
+  "descricaoAn" : "Apartamento novo no centro histórico!",
+  "dataPub" : "2026-09-23",
+  "estadoAn" : "Ativo",
+  "preco" : 215000,
+  "agente" : {
+    "id" : 10,
+    "nome" : "Inês Gomes",
+    "contacto" : 927641859,
+    "email" : null,
+    "password" : null
+  }
+}, {
+  "id" : 11,
+  "morada" : "Leiria",
+  "tipologia" : 4,
+  "metros" : 210.0,
+  "andares" : 2,
+  "wc" : 4,
+  "varandas" : 3,
+  "estado" : "Usado",
+  "anoConstrucao" : 2010,
+  "classeEnergetica" : "B+",
+  "tituloAn" : "T4 em Leiria",
+  "descricaoAn" : "Moradia com jardim e garagem!",
+  "dataPub" : "2026-09-25",
+  "estadoAn" : "Desativado",
+  "preco" : 340000,
+  "agente" : {
+    "id" : 1,
+    "nome" : "João Silva",
+    "contacto" : 987654321,
+    "email" : null,
+    "password" : null
+  }
+}, {
+  "id" : 12,
+  "morada" : "Évora",
+  "tipologia" : 1,
+  "metros" : 62.0,
+  "andares" : 1,
+  "wc" : 1,
+  "varandas" : 1,
+  "estado" : "Usado",
+  "anoConstrucao" : 2001,
+  "classeEnergetica" : "D",
+  "tituloAn" : "T1 em Évora",
+  "descricaoAn" : "Pequena joia perto da zona histórica!",
+  "dataPub" : "2026-09-27",
+  "estadoAn" : "Ativo",
+  "preco" : 125000,
+  "agente" : {
+    "id" : 2,
+    "nome" : "Maria Santos",
+    "contacto" : 935012269,
+    "email" : null,
+    "password" : null
+  }
+}, {
+  "id" : 13,
+  "morada" : "Funchal",
+  "tipologia" : 3,
+  "metros" : 150.0,
+  "andares" : 2,
+  "wc" : 3,
+  "varandas" : 3,
+  "estado" : "Novo",
+  "anoConstrucao" : 2024,
+  "classeEnergetica" : "A",
+  "tituloAn" : "T3 no Funchal",
+  "descricaoAn" : "Vista deslumbrante para o oceano!",
+  "dataPub" : "2026-09-30",
+  "estadoAn" : "Ativo",
+  "preco" : 390000,
+  "agente" : {
+    "id" : 3,
+    "nome" : "Rui Almeida",
+    "contacto" : 948105284,
+    "email" : null,
+    "password" : null
+  }
+}, {
+  "id" : 14,
+  "morada" : "Cascais",
+  "tipologia" : 5,
+  "metros" : 380.0,
+  "andares" : 3,
+  "wc" : 5,
+  "varandas" : 4,
+  "estado" : "Novo",
+  "anoConstrucao" : 2026,
+  "classeEnergetica" : "A++",
+  "tituloAn" : "T5 em Cascais",
+  "descricaoAn" : "Moradia de luxo a minutos da baía!",
+  "dataPub" : "2026-10-02",
+  "estadoAn" : "Rascunho",
+  "preco" : 1250000,
+  "agente" : {
+    "id" : 4,
+    "nome" : "Ana Ferreira",
+    "contacto" : 912345678,
+    "email" : null,
+    "password" : null
+  }
+}, {
+  "id" : 15,
+  "morada" : "Viana do Castelo",
+  "tipologia" : 2,
+  "metros" : 85.0,
+  "andares" : 1,
+  "wc" : 2,
+  "varandas" : 1,
+  "estado" : "Usado",
+  "anoConstrucao" : 2014,
+  "classeEnergetica" : "B",
+  "tituloAn" : "T2 em Viana do Castelo",
+  "descricaoAn" : "Apartamento junto ao rio Lima!",
+  "dataPub" : "2026-10-05",
+  "estadoAn" : "Ativo",
+  "preco" : 175000,
+  "agente" : {
+    "id" : 5,
+    "nome" : "Pedro Costa",
+    "contacto" : 963217845,
+    "email" : null,
+    "password" : null
   }
 } ]

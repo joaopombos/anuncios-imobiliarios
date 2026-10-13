@@ -2,18 +2,120 @@
   "id" : 1,
   "nome" : "António Campos",
   "contacto" : 923748194,
-  "email" : null,
-  "password" : null
+  "email" : "antonio@email.com",
+  "password" : "123"
 }, {
   "id" : 2,
   "nome" : "Lurdes Costa",
   "contacto" : 982643928,
-  "email" : null,
-  "password" : null
+  "email" : "lurdes@email.com",
+  "password" : "123"
 }, {
   "id" : 3,
   "nome" : "Joana Mendes",
   "contacto" : 983822849,
-  "email" : null,
-  "password" : null
+  "email" : "joana@email.com",
+  "password" : "123"
+}, {
+  "id" : 4,
+  "nome" : "Miguel Santos",
+  "contacto" : 924882304,
+  "email" : "miguel@email.com",
+  "password" : "123"
+}, {
+  "id" : 5,
+  "nome" : "Helena Barbosa",
+  "contacto" : 916382045,
+  "email" : "helena@email.com",
+  "password" : "123"
+}, {
+  "id" : 6,
+  "nome" : "Ricardo Fernandes",
+  "contacto" : 936741829,
+  "email" : "ricardo@email.com",
+  "password" : "123"
+}, {
+  "id" : 7,
+  "nome" : "Teresa Lopes",
+  "contacto" : 961847253,
+  "email" : "teresa@email.com",
+  "password" : "123"
+}, {
+  "id" : 8,
+  "nome" : "Fernando Ribeiro",
+  "contacto" : 927195306,
+  "email" : "fernando@email.com",
+  "password" : "123"
+}, {
+  "id" : 9,
+  "nome" : "Patrícia Moreira",
+  "contacto" : 914528763,
+  "email" : "patricia@email.com",
+  "password" : "123"
+}, {
+  "id" : 10,
+  "nome" : "Hugo Teixeira",
+  "contacto" : 938067421,
+  "email" : "hugo@email.com",
+  "password" : "123"
+}, {
+  "id" : 11,
+  "nome" : "Cláudia Nunes",
+  "contacto" : 962310587,
+  "email" : "claudia@email.com",
+  "password" : "123"
+}, {
+  "id" : 12,
+  "nome" : "Nuno Pinto",
+  "contacto" : 925874310,
+  "email" : "nuno@email.com",
+  "password" : "123"
+}, {
+  "id" : 13,
+  "nome" : "Sara Marques",
+  "contacto" : 917603982,
+  "email" : "sara@email.com",
+  "password" : "123"
+}, {
+  "id" : 14,
+  "nome" : "Paulo Correia",
+  "contacto" : 934189675,
+  "email" : "paulo@email.com",
+  "password" : "123"
+}, {
+  "id" : 15,
+  "nome" : "Marta Cardoso",
+  "contacto" : 968452031,
+  "email" : "marta@email.com",
+  "password" : "123"
+}, {
+  "id" : 16,
+  "nome" : "Diogo Azevedo",
+  "contacto" : 921736548,
+  "email" : "diogo@email.com",
+  "password" : "123"
+}, {
+  "id" : 17,
+  "nome" : "Filipa Sousa",
+  "contacto" : 913920476,
+  "email" : "filipa@email.com",
+  "password" : "123"
+}, {
+  "id" : 18,
+  "nome" : "Gonçalo Matos",
+  "contacto" : 939251867,
+  "email" : "goncalo@email.com",
+  "password" : "123"
+}, {
+  "id" : 19,
+  "nome" : "Beatriz Henriques",
+  "contacto" : 964730218,
+  "email" : "beatriz@email.com",
+  "password" : "123"
+}, {
+  "id" : 20,
+  "nome" : "Rafael Dias",
+  "contacto" : 928406375,
+  "email" : "rafael@email.com",
+  "password" : "123"
 } ]

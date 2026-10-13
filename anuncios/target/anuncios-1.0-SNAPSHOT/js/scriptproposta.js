@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const proposta = {
             preco: preco,
             comentario: comentario,
-            estado: "Pendente",
             cliente: { id: clienteId },
             imovel: { id: imovelId }
         };
@@ -99,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             imoveis.forEach(i => {
                 const opt = document.createElement('option');
                 opt.value = i.id;
-                opt.textContent = `${i.tituloAn || i.morada} - ${i.morada} (${i.preco} €)`;
+                opt.textContent = `${i.tituloAn || i.morada} - ${i.morada} (${i.preco} €) (ID ${i.id})`;
                 select.appendChild(opt);
             });
         } catch (erro) {
