@@ -61,25 +61,21 @@ public class AuthService {
         return new Sessao(AGENTE, a.getId(), a.getNome(), a.getEmail());
     }
 
-    /** @return a sessão, ou null se o email/palavra-passe estiverem errados. */
+    /** Compara apenas email e palavra-passe. @return a sessão, ou null se estiverem errados. */
     public Sessao login(AuthRequest req) {
-        validarTipo(req.getTipo());
         if (req.getEmail() == null || req.getPassword() == null) {
             return null;
         }
         String email = req.getEmail().trim();
 
-        if (CLIENTE.equals(req.getTipo())) {
-            for (Cliente c : clienteService.listarTodos()) {
-                if (email.equalsIgnoreCase(c.getEmail()) && req.getPassword().equals(c.getPassword())) {
-                    return new Sessao(CLIENTE, c.getId(), c.getNome(), c.getEmail());
-                }
+        for (Cliente c : clienteService.listarTodos()) {
+            if (email.equalsIgnoreCase(c.getEmail()) && req.getPassword().equals(c.getPassword())) {
+                return new Sessao(CLIENTE, c.getId(), c.getNome(), c.getEmail());
             }
-        } else {
-            for (AgenteImobiliario a : agenteService.listarTodos()) {
-                if (email.equalsIgnoreCase(a.getEmail()) && req.getPassword().equals(a.getPassword())) {
-                    return new Sessao(AGENTE, a.getId(), a.getNome(), a.getEmail());
-                }
+        }
+        for (AgenteImobiliario a : agenteService.listarTodos()) {
+            if (email.equalsIgnoreCase(a.getEmail()) && req.getPassword().equals(a.getPassword())) {
+                return new Sessao(AGENTE, a.getId(), a.getNome(), a.getEmail());
             }
         }
         return null;

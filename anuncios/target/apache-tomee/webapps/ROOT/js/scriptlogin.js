@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const trocaTexto = document.getElementById('trocaTexto');
     const camposRegisto = document.getElementById('camposRegisto');
     const mensagem = document.getElementById('mensagem');
+    const tipoGrupo = document.getElementById('tipoGrupo');
 
     document.querySelectorAll('#tipoGrupo button').forEach(btn => {
         btn.addEventListener('click', () => {
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         trocaTexto.textContent = modoRegisto ? 'Já tem conta?' : 'Ainda não tem conta?';
         trocaModo.textContent = modoRegisto ? 'Entrar' : 'Criar conta';
         camposRegisto.style.display = modoRegisto ? 'block' : 'none';
+        tipoGrupo.style.setProperty('display', modoRegisto ? 'flex' : 'none', 'important');
         document.getElementById('password').autocomplete =
             modoRegisto ? 'new-password' : 'current-password';
         mensagem.className = '';
@@ -37,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const email = document.getElementById('email').value.trim();
         const password = document.getElementById('password').value;
-        const corpo = { tipo, email, password };
+        const corpo = { email, password };
 
         if (!email || !password) {
             return mostrar('Preencha o email e a palavra-passe', 'erro');
@@ -50,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!Number.isInteger(contacto) || contacto <= 0) {
                 return mostrar('Contacto deve ser um número válido', 'erro');
             }
+            corpo.tipo = tipo;
             corpo.nome = nome;
             corpo.contacto = contacto;
         }
