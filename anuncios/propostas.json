@@ -37,7 +37,7 @@
 }, {
   "id" : 2,
   "preco" : 375000,
-  "estado" : "Pendente",
+  "estado" : "Aprovado",
   "comentario" : "QUERO!",
   "cliente" : {
     "id" : 1,
@@ -73,7 +73,7 @@
 }, {
   "id" : 3,
   "preco" : 170000,
-  "estado" : "Pendente",
+  "estado" : "Não Aprovado",
   "comentario" : "Dá-me",
   "cliente" : {
     "id" : 3,

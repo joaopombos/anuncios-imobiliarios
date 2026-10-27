@@ -54,7 +54,6 @@ public class AgenteRepository {
                 guardarDadosFicheiro(); // ← Persiste em ficheiro
         }
 
-        // ========== NOVOS MÉTODOS ==========
 
         private void carregarDadosFicheiro() {
                 File ficheiro = new File(FICHEIRO_DADOS);

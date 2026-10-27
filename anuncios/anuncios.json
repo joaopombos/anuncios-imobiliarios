@@ -311,35 +311,12 @@
   "tituloAn" : "T5 em Cascais",
   "descricaoAn" : "Moradia de luxo a minutos da baía!",
   "dataPub" : "2026-10-02",
-  "estadoAn" : "Rascunho",
+  "estadoAn" : "Desativado",
   "preco" : 1250000,
   "agente" : {
     "id" : 4,
     "nome" : "Ana Ferreira",
     "contacto" : 912345678,
-    "email" : null,
-    "password" : null
-  }
-}, {
-  "id" : 15,
-  "morada" : "Viana do Castelo",
-  "tipologia" : 2,
-  "metros" : 85.0,
-  "andares" : 1,
-  "wc" : 2,
-  "varandas" : 1,
-  "estado" : "Usado",
-  "anoConstrucao" : 2014,
-  "classeEnergetica" : "B",
-  "tituloAn" : "T2 em Viana do Castelo",
-  "descricaoAn" : "Apartamento junto ao rio Lima!",
-  "dataPub" : "2026-10-05",
-  "estadoAn" : "Ativo",
-  "preco" : 175000,
-  "agente" : {
-    "id" : 5,
-    "nome" : "Pedro Costa",
-    "contacto" : 963217845,
     "email" : null,
     "password" : null
   }
